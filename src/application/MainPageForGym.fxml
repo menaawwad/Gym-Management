@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageForGymController">
+   <children>
+      <BorderPane prefHeight="700.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+          <AnchorPane maxWidth="230.0" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="212.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" layoutX="49.0" layoutY="63.0" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #deeaee;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Pane maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="230.0">
+                           <children>
+                              <ImageView fitHeight="81.0" fitWidth="95.0" layoutX="70.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/Logo.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Region layoutX="10.0" layoutY="626.0" prefHeight="20.0" prefWidth="200.0" />
+                        <Line endX="100.0" startX="-100.0" />
+                        <Region prefHeight="53.0" prefWidth="223.0" />
+                        <HBox fx:id="HomeBtn" alignment="CENTER" maxWidth="1.7976931348623157E308" onMouseClicked="#HomeClick" prefHeight="55.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/3844470_home_house_icon%20(1).png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="115.0" text="Home" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="customerBtn" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" onMouseClicked="#CustomerClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/user%20(1).png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Customers" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="65.0" prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="productsBtn" alignment="CENTER" layoutX="10.0" layoutY="65.0" maxWidth="1.7976931348623157E308" onMouseClicked="#ProductClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/whey-protein.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Products" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="141.0" prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="purchaseBtn" alignment="CENTER" layoutX="10.0" layoutY="411.0" maxWidth="1.7976931348623157E308" onMouseClicked="#purchaseClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/spending.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Purchase" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="467.0" prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="salesBtn" alignment="CENTER" layoutX="14.0" layoutY="121.0" maxWidth="1.7976931348623157E308" onMouseClicked="#salesClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/Total%20Sales.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Sales" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="216.0" prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="expensesBtn" alignment="CENTER" layoutX="14.0" layoutY="176.0" maxWidth="1.7976931348623157E308" onMouseClicked="#expensesClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/spending.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Expenses" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="291.0" prefHeight="20.0" prefWidth="200.0" />
+                        <HBox fx:id="reportsBtn" alignment="CENTER" layoutX="14.0" layoutY="231.0" maxWidth="1.7976931348623157E308" onMouseClicked="#reportsClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/analytics.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Statistics" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="367.0" prefHeight="20.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                        <Line endX="100.0" startX="-100.0" strokeWidth="2.0" />
+                        <HBox fx:id="LogoutBtn" alignment="CENTER" layoutX="14.0" layoutY="287.0" maxWidth="1.7976931348623157E308" onMouseClicked="#logoutClick" prefHeight="55.0" prefWidth="143.0">
+                           <children>
+                              <ImageView fitHeight="36.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Pictures/login.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="117.0" text="Exit" textAlignment="CENTER" textOverrun="CLIP">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Region layoutX="10.0" layoutY="617.0" prefHeight="20.0" prefWidth="200.0" />
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="392.0" prefWidth="636.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane fx:id="borderPane4Scene" layoutX="113.0" layoutY="85.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="1000.0" style="-fx-background-color: #deeaee;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Technion - Handasem - Mena Awwad" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

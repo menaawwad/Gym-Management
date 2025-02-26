@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.confirmationNewController">
+   <right>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="82.0" layoutY="21.0" text="New Subscription Confirmation">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="101.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="155.0" text="ID Number:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtName" editable="false" layoutX="114.0" layoutY="95.0" prefHeight="39.0" prefWidth="243.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtIDNumber" editable="false" layoutX="114.0" layoutY="149.0" prefHeight="39.0" prefWidth="242.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Button fx:id="btnCancel" layoutX="59.0" layoutY="385.0" mnemonicParsing="false" onAction="#clickCancel" styleClass="btnCancel" stylesheets="@application.css" text="Cancel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnConfirm" layoutX="321.0" layoutY="372.0" mnemonicParsing="false" onAction="#clickConfirm" prefHeight="66.0" prefWidth="140.0" styleClass="btnSave" stylesheets="@application.css" text="Confirm">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="46.0" layoutY="279.0" text="New Peryod">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStart" editable="false" layoutX="157.0" layoutY="273.0" prefHeight="12.0" prefWidth="130.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEnd" editable="false" layoutX="316.0" layoutY="273.0" prefHeight="12.0" prefWidth="130.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="196.0" layoutY="316.0" text="Start">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="365.0" layoutY="316.0" text="End">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="225.0" text="Will be establish for this period">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

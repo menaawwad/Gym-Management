@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.addNewSaleSceneController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="901.0" prefWidth="1063.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="101.0" prefWidth="1063.0">
+               <children>
+                  <Label text="New Sale">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Line endX="160.0" strokeWidth="2.0" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="308.0" prefWidth="1194.0">
+               <children>
+                  <Pane prefHeight="335.0" prefWidth="955.0">
+                     <children>
+                        <ComboBox fx:id="cboProductList" layoutX="67.0" layoutY="171.0" onAction="#onActionProductList" prefHeight="25.0" prefWidth="291.0" promptText="Select Product" />
+                        <TextField fx:id="txtUnitCost" alignment="CENTER" editable="false" layoutX="574.0" layoutY="171.0" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="499.0" layoutY="171.0" text="Unit Cost:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btnAdd" layoutX="776.0" layoutY="239.0" mnemonicParsing="false" onAction="#clickAdd" prefHeight="56.0" prefWidth="124.0" text="Add To List">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtMinPrice" alignment="CENTER" editable="false" layoutX="724.0" layoutY="171.0" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="649.0" layoutY="171.0" text="Min Price:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSellPrice" alignment="CENTER" layoutX="132.0" layoutY="257.0" onKeyTyped="#onKeySellPrice" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="60.0" layoutY="257.0" text="Sell Price:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtSearchProduct" alignment="CENTER" layoutX="67.0" layoutY="138.0" onKeyTyped="#onKeyProductName" prefHeight="25.0" prefWidth="291.0" promptText="Search by Name or Barcode or ID" />
+                        <TextField fx:id="txtStock" alignment="CENTER" editable="false" layoutX="844.0" layoutY="172.0" prefHeight="25.0" prefWidth="46.0" />
+                        <Label layoutX="797.0" layoutY="172.0" text="Stock:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtProductName" alignment="CENTER" editable="false" layoutX="427.0" layoutY="136.0" prefHeight="25.0" prefWidth="267.0" />
+                        <Label layoutX="377.0" layoutY="138.0" text="Name:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtProductID" alignment="CENTER" editable="false" layoutX="427.0" layoutY="171.0" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="403.0" layoutY="172.0" text="ID:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtBarcode" alignment="CENTER" editable="false" layoutX="771.0" layoutY="138.0" prefHeight="25.0" prefWidth="118.0" />
+                        <Label layoutX="705.0" layoutY="137.0" text="Barcode:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-510.0" endY="-58.0" layoutX="698.0" layoutY="183.0" startX="203.5" startY="-58.0" />
+                        <Label layoutX="69.0" layoutY="112.0" text="Select Product">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-457.0" endY="-58.0" layoutX="698.0" layoutY="298.0" startX="72.0" startY="-58.0" />
+                        <Label layoutX="62.0" layoutY="228.0" text="Product Preices &amp; Qty">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtID" alignment="CENTER" editable="false" layoutX="776.0" layoutY="39.0" prefHeight="25.0" prefWidth="110.0" />
+                        <Label layoutX="729.0" layoutY="39.0" text="Serial:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="348.0" layoutY="40.0" text=" Name:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="429.0" layoutY="69.0" text="ID Card Num:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtIdNum" alignment="CENTER" editable="false" layoutX="526.0" layoutY="69.0" />
+                        <ComboBox fx:id="cboCustomerList" layoutX="71.0" layoutY="69.0" onAction="#onActionCustomerList" prefHeight="25.0" prefWidth="249.0" promptText="Select Customer" />
+                        <TextField fx:id="txtSearchCustomer" alignment="CENTER" layoutX="71.0" layoutY="39.0" onKeyTyped="#onKeyCustomerName" prefHeight="25.0" prefWidth="249.0" promptText="Search By Name or ID card or Customer ID" />
+                        <TextField fx:id="txtCustomerName" alignment="CENTER" editable="false" layoutX="405.0" layoutY="39.0" prefHeight="25.0" prefWidth="308.0" />
+                        <Line endX="-495.0" endY="-58.0" layoutX="698.0" layoutY="82.0" startX="203.5" startY="-58.0" />
+                        <Label layoutX="69.0" layoutY="11.0" text="Select Customer">
+                           <font>
+                              <Font name="System Italic" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtQuantity" alignment="CENTER" layoutX="277.0" layoutY="257.0" onKeyTyped="#onKeyQuantity" prefHeight="25.0" prefWidth="42.0" />
+                        <Label layoutX="206.0" layoutY="257.0" text="Quantity:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTotalPrice" alignment="CENTER" layoutX="697.0" layoutY="257.0" onKeyTyped="#onKeyTotalPrice" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="615.0" layoutY="257.0" text="Total Price:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTotalVat" alignment="CENTER" editable="false" layoutX="356.0" layoutY="257.0" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="321.0" layoutY="257.0" text=" Vat:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTotalBeforeVat" alignment="CENTER" editable="false" layoutX="545.0" layoutY="257.0" prefHeight="25.0" prefWidth="67.0" />
+                        <Label layoutX="429.0" layoutY="257.0" text="Total before vat:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Region prefHeight="280.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                  <TableView fx:id="tblNewSale" prefHeight="263.0" prefWidth="932.0">
+                    <columns>
+                      <TableColumn fx:id="columnID" prefWidth="51.0" style="-fx-font-size: 16; -fx-alignment: center;" text="#" />
+                      <TableColumn fx:id="columnProductName" prefWidth="375.0" style="-fx-font-size: 16; -fx-alignment: center;" text="Product name" />
+                        <TableColumn fx:id="columnUnitPrice" prefWidth="104.0" style="-fx-font-size: 16; -fx-alignment: center;" text="Unit Price" />
+                        <TableColumn fx:id="columnQuantity" prefWidth="89.0" style="-fx-font-size: 16; -fx-alignment: center;" text="Quantity" />
+                        <TableColumn fx:id="columnRowPrice" prefWidth="103.0" style="-fx-font-size: 16; -fx-alignment: center;" text="Row Price" />
+                        <TableColumn fx:id="columnAction" prefWidth="76.0" style="-fx-font-size: 16; -fx-alignment: center;" text="Action" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Region prefHeight="280.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Pane prefHeight="134.0" prefWidth="1194.0">
+               <children>
+                  <Label layoutX="754.0" layoutY="16.0" text="Sum: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtSum" alignment="CENTER" editable="false" layoutX="792.0" layoutY="13.0" />
+                  <Label layoutX="720.0" layoutY="47.0" text="Vat (17%):">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtVat" alignment="CENTER" editable="false" layoutX="792.0" layoutY="44.0" />
+                  <Label layoutX="754.0" layoutY="77.0" text="Total:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTotal" alignment="CENTER" editable="false" layoutX="792.0" layoutY="74.0" />
+                  <Button fx:id="btnConfirmAndPrint" layoutX="121.0" layoutY="11.0" mnemonicParsing="false" onAction="#clickConfirmAndPrint" styleClass="btnSave" stylesheets="@application.css" text="Confirm and Print">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnConfirmAndPDF" layoutX="121.0" layoutY="65.0" mnemonicParsing="false" onAction="#clickConfirmAndPDF" prefHeight="39.0" prefWidth="162.0" styleClass="btnSave" stylesheets="@application.css" text="Confirm and PDF">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane prefHeight="69.0" prefWidth="1194.0">
+               <children>
+                  <Button fx:id="btnCancel" layoutX="106.0" layoutY="15.0" mnemonicParsing="false" onAction="#clickCancel" styleClass="btnCancel" stylesheets="@application.css" text="Cancel">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnNewSale" layoutX="214.0" layoutY="15.0" mnemonicParsing="false" onAction="#clickNewSale" text="New Sale">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
